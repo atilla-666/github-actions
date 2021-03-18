@@ -3,11 +3,8 @@
 # GitHub Actions Part-1 - Basics
 #------------------------------------#
 
-
-
 name: My-GitHubActions-Basics
 
-# Controls when the action will run. 
 on: 
   push:
     branches: 
@@ -21,12 +18,11 @@ jobs:
     - name : Print Hello Message
       run  : echo "Hello World from Testing job"
 
-   my_deploy: 
-      runs on : ubuntu-latest
-     
-      steps:
-      - name : Print Hello Message
-        run  : echo "Hello World from Deploy job"
+  my_deploy: 
+    runs on : ubuntu-latest
+    steps:
+    - name : Print Hello Message
+      run  : echo "Hello World from Deploy job"
           
           
           
